@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nellie // Interactive Task Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">🐾 Studio Nellie</div>
+        <nav class="flex-nav">
+            <a href="index.html" class="nav-link">Biography</a>
+            <a href="contact.html" class="nav-link">Connect Uplink</a>
+            <a href="todo.html" class="nav-link active">Task Planner</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-card">
+            <div class="form-header">
+                <h2>Daily Agenda Hub</h2>
+                <p>Organize your day, manage your priorities, and check off items dynamically using live DOM manipulation actions.</p>
+            </div>
+
+            <form id="todoForm" class="cozy-form" novalidate>
+                <div class="form-group">
+                    <label for="taskInput">New Task Parameter:</label>
+                    <input type="text" id="taskInput" placeholder="e.g. Cook fresh recipe dinner..." autocomplete="off" required>
+                </div>
+                <button type="submit" class="btn-submit">Append To Agenda</button>
+            </form>
+
+            <div class="task-container" style="margin-top: 2.5rem;">
+                <h3 style="font-family: 'Georgia', serif; font-size: 1.2rem; margin-bottom: 1rem;">Active Subscriptions</h3>
+                <ul id="taskList" class="todo-list" style="list-style-type: none; padding-left: 0;"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Studio Nellie. Engineered using modern CSS layout systems.</p>
+    </footer>
+
+    <script src="js/todo.js"></script>
+</body>
+</html> 
